@@ -14,7 +14,7 @@ The product includes SMS, IVR, social media and web-interfaces that handles dona
 At the moment we provide two APIs for integration:
 
 - [Push API](Push.md) - Pushes info about new donations or members to your server-side using HTTP POST or GET.
-- Rest API - Integrate your system towards our REST API (COMING SOON)
+- [Rest API](Rest.md) - Integrate your system with our REST API.
 
 
 ### Registering an account
