@@ -4,7 +4,7 @@ The Collect REST API lets you create, manipulate and retrieve data related to yo
 
 The API uses [Auth0](https://auth0.com/) for authentication and you will need to set up -->an account.<---
 
-The Collect API supports the [Open API Initiative](https://openapis.org) and implements the [Swagger 2.0 specification](http://swagger.io/). You can access the swagger definitions as [JSON here](https://qacollectapi.intele.com/collect-api/rs/swagger.json) or as [YAML here](https://qacollectapi.intele.com/collect-api/rs/swagger.yaml). There are many [integration tools available](http://swagger.io/open-source-integrations/) that support this specification.
+The Collect API supports the [Open API Initiative](https://openapis.org) and implements the [Swagger 2.0 specification](http://swagger.io/). You can access the swagger definitions as [JSON here](https://collectapi.intele.com/collect-api/rs/swagger.json) or as [YAML here](https://collectapi.intele.com/collect-api/rs/swagger.yaml). There are many [integration tools available](http://swagger.io/open-source-integrations/) that support this specification.
 
 You check out the documentation for all [the API operations here](https://intelecom.github.io/collect/swagger-ui) or read on for an overview.
 
@@ -20,7 +20,7 @@ You check out the documentation for all [the API operations here](https://intele
 
 
 ## REST Operations
-Check out the [swagger-ui documentation](https://intelecom.github.io/collect/swagger-ui) or import the swagger [JSON](https://qacollectapi.intele.com/collect-api/rs/swagger.json) or [YAML](https://qacollectapi.intele.com/collect-api/rs/swagger.yaml) definitions into [an integration tool](http://swagger.io/open-source-integrations/) or directly into [Postman](https://www.getpostman.com/).
+Check out the [swagger-ui documentation](https://intelecom.github.io/collect/swagger-ui) or import the swagger [JSON](https://collectapi.intele.com/collect-api/rs/swagger.json) or [YAML](https://collectapi.intele.com/collect-api/rs/swagger.yaml) definitions into [an integration tool](http://swagger.io/open-source-integrations/) or directly into [Postman](https://www.getpostman.com/).
 
 ### Activity Resource
 [The Activity Resource](http://intelecom.github.io/collect/swagger-ui/#/Activity) has several operations for manipulating activities.
