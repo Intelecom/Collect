@@ -2,7 +2,7 @@
 
 The Collect REST API lets you create, manipulate and retrieve data related to your activities, collectors, members and transactions. It also gives you access to different types of statistics data. You can use the API to build your own services or integrate it with your existing systems or services. The API can be used as an alternative to, or in combination with, the existing Intelecom Collect web pages.
 
-The API uses [Auth0](https://auth0.com/) for authentication and you will need to set up -->an account.<---
+The API uses [Auth0](https://auth0.com/) for authentication and you will need to set up an [account](Authentication.md).
 
 The Collect API supports the [Open API Initiative](https://openapis.org) and implements the [Swagger 2.0 specification](http://swagger.io/). You can access the swagger definitions as [JSON here](https://collectapi.intele.com/collect-api/rs/swagger.json) or as [YAML here](https://collectapi.intele.com/collect-api/rs/swagger.yaml). There are many [integration tools available](http://swagger.io/open-source-integrations/) that support this specification.
 
