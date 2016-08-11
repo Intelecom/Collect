@@ -25,7 +25,8 @@ Content body:
   "grant_type":  "password",
   "scope":       "openid",
   "device":      ""
-}```
+}
+```
 
 Response sample:
 ```json
@@ -33,7 +34,8 @@ Response sample:
     "id_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2l0Y2F1dGgwZGV2LmV1LmF1dGgwLmNvbS8iLCJzdWIiOiJhdXRoMHw1NmZkMDUzZDdjMWZiM2RkMjY3YmM3ZTYiLCJhdWQiOiJFb3J0RVVDMXNDa3RtbFpMdEFJQ0p2UGRmZjJjTmdYbCIsImV4cCI6MTQ1OTQ1OTMwNiwiaWF0IjoxNDU5NDIzMzA2fQ.7CcrbAgBpXmnvEccZdgscVxgevzbFPMryG5z7gkpBrw",
     "access_token": "24nTW53UeoAaZFm0",
     "token_type": "bearer"
-}```
+}
+```
 
 Use access token
 ----------------
