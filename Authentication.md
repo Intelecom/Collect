@@ -2,7 +2,7 @@ Collect REST API Authentication
 ==========================
 Sign up
 -------
-The Collect REST API use authentication from auth0.com. Before you can use the REST API you must register with email and password [here](https://itcauth0prod.eu.auth0.com/login?client=ST9a66rvqw3CA7hWFGJgEuqMARB8Kjfx). When done, please contact Intelecom Interactive Support to get access to the correct customer data.
+The Collect REST API use authentication from auth0.com. Before you can use the REST API you must register with email and password [here](https://itcauth0prod.eu.auth0.com/login?client=ST9a66rvqw3CA7hWFGJgEuqMARB8Kjfx&redirect_uri=https%3A%2F%2Fwww.intelecom.no). When done, please contact Intelecom Interactive Support to get access to the correct customer data.
 
 Get access token
 ----------------
