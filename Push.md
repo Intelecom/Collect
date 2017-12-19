@@ -41,7 +41,7 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>activityType</td><td>String</td><td>Type of activity (collect or member)</td><td>Yes</td></tr>	
 <tr><td>activityGuid</td><td>String</td><td>GUID for the activity</td><td>Yes</td></tr>	
 <tr><td>activityName</td><td>String</td><td>The name of the activity</td><td>Yes</td></tr>	
-<tr><td>activityInvoiceName</td><td>String</td><td>Invoice text (on the Intelecom invoice)</td><td>No</td></tr>	
+<tr><td>activityInvoiceName</td><td>String</td><td>Invoice text (on the Puzzel invoice)</td><td>No</td></tr>	
 <tr><td>collectionUnitId</td><td>Integer</td><td>Identifier for the collection unit</td><td>Yes</td></tr>	
 <tr><td>collectionUnitGuid</td><td>String</td><td>GUID for the collection unit</td><td>Yes</td></tr>	
 <tr><td>collectionUnitCode</td><td>String</td><td>Code for the collection unit</td><td>Yes</td></tr>	
@@ -60,7 +60,7 @@ If you have a service that is using both modes it is possible to set up multiple
 
 ### Example Request - Push of donation data using HTTP(S) GET
 
-	http://customer.server-url.com?id=256213&serviceId=1131&moMessageId=7a07w0002e00&billingMessageId=7a02g1fm7300&firstName=Intelecom++AS&lastName=Group&address=Brynsveien+13&areaCode=0667&city=Oslo&activityId=492&activityType=CollectActivity&activityGuid=07113B9A-7238-4A65-AD56-543DAD01470B&activityName=Test+innsamling&activityInvoiceName=Test+innsamling&collectionUnitId=4250&collectionUnitGuid=70DD51D3-960A-4A97-BBA5-B7DEAA6BF472&collectionUnitCode=23&collectorId=34&collectorName=Test&collectorNumber=234&msisdn=%2B4799999999&orderId=254265&orderDate=2016-02-04+09%3A27%3A28.653&price=100&isDelivered=true&isProcessed=false&moKeyword=grmkunst
+	http://customer.server-url.com?id=256213&serviceId=1131&moMessageId=7a07w0002e00&billingMessageId=7a02g1fm7300&firstName=Puzzel++AS&lastName=Group&address=Brynsveien+13&areaCode=0667&city=Oslo&activityId=492&activityType=CollectActivity&activityGuid=07113B9A-7238-4A65-AD56-543DAD01470B&activityName=Test+innsamling&activityInvoiceName=Test+innsamling&collectionUnitId=4250&collectionUnitGuid=70DD51D3-960A-4A97-BBA5-B7DEAA6BF472&collectionUnitCode=23&collectorId=34&collectorName=Test&collectorNumber=234&msisdn=%2B4799999999&orderId=254265&orderDate=2016-02-04+09%3A27%3A28.653&price=100&isDelivered=true&isProcessed=false&moKeyword=grmkunst
 
 ### Example - Push of donation data using HTTP(S) POST with JSON
 
@@ -71,8 +71,8 @@ If you have a service that is using both modes it is possible to set up multiple
 		"moMessageContent": "test",
 		"moKeyword": "grmkunst",
 		"billingMessageId": "7v02g1hm7s00",
-		"firstName": "Intelecom",
-		"lastName": "Group AS",
+		"firstName": "Puzzel",
+		"lastName": "Collect",
 		"address": "Brynsveien13",
 		"areaCode": "0667",
 		"city": "Oslo",
