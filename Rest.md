@@ -6,7 +6,7 @@ The API uses [Auth0](https://auth0.com/) for authentication and you will need to
 
 The Collect API supports the [Open API Initiative](https://openapis.org) and implements the [Swagger 2.0 specification](http://swagger.io/). You can access the swagger definitions as [JSON here](https://collectapi.intele.com/collect-api/rs/swagger.json) or as [YAML here](https://collectapi.intele.com/collect-api/rs/swagger.yaml). There are many [integration tools available](http://swagger.io/open-source-integrations/) that support this specification.
 
-You check out the documentation for all [the API operations here](https://intelecom.github.io/Collect/swagger-ui) or read on for an overview.
+You check out the documentation for all [the API operations here](https://puzzelsolutions.github.io/Collect/swagger-ui) or read on for an overview.
 
 ### Definitions
 <table>
@@ -20,19 +20,19 @@ You check out the documentation for all [the API operations here](https://intele
 
 
 ## REST Operations
-Check out the [swagger-ui documentation](https://intelecom.github.io/Collect/swagger-ui) or import the swagger [JSON](https://collectapi.intele.com/collect-api/rs/swagger.json) or [YAML](https://collectapi.intele.com/collect-api/rs/swagger.yaml) definitions into [an integration tool](http://swagger.io/open-source-integrations/) or directly into [Postman](https://www.getpostman.com/).
+Check out the [swagger-ui documentation](https://puzzelsolutions.github.io/Collect/swagger-ui) or import the swagger [JSON](https://collectapi.intele.com/collect-api/rs/swagger.json) or [YAML](https://collectapi.intele.com/collect-api/rs/swagger.yaml) definitions into [an integration tool](http://swagger.io/open-source-integrations/) or directly into [Postman](https://www.getpostman.com/).
 
 ### Activity Resource
-[The Activity Resource](http://intelecom.github.io/Collect/swagger-ui/#/Activity) has several operations for manipulating activities.
+[The Activity Resource](http://puzzelsolutions.github.io/Collect/swagger-ui/#/Activity) has several operations for manipulating activities.
 
 ### Collector Resource
-[The Collector resource](http://intelecom.github.io/Collect/swagger-ui/#/Collector) has operations for manipulating collectors. 
+[The Collector resource](http://puzzelsolutions.github.io/Collect/swagger-ui/#/Collector) has operations for manipulating collectors. 
 
 ### Member Resource
-[The Collector resource](http://intelecom.github.io/Collect/swagger-ui/#/Member) has operations for manipulating members.
+[The Collector resource](http://puzzelsolutions.github.io/Collect/swagger-ui/#/Member) has operations for manipulating members.
 
 ### Transaction Resource
-[The Transaction Resource](http://intelecom.github.io/Collect/swagger-ui/#/Transaction) gives access to transaction data.
+[The Transaction Resource](http://puzzelsolutions.github.io/Collect/swagger-ui/#/Transaction) gives access to transaction data.
 
 ### Statistics Resource
-[The Statistics Resource](http://intelecom.github.io/Collect/swagger-ui/#/Statistics) has operations to access several types of statistics data for transactions and turnover (revenues).
+[The Statistics Resource](http://puzzelsolutions.github.io/Collect/swagger-ui/#/Statistics) has operations to access several types of statistics data for transactions and turnover (revenues).
