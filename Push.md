@@ -54,7 +54,35 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>price</td><td>Integer</td><td>Price of the billing message</td><td>Yes</td></tr>	
 <tr><td>isDelivered</td><td>Boolean</td><td>True if the billing message was delivered</td><td>Yes</td></tr>	
 <tr><td>isProcessed</td><td>Boolean</td><td>True if the order has been processed</td><td>Yes</td></tr>	
+<tr><td>shortCode</td><td>String</td><td>The SMS shortcode used (if any)</td><td>No</td></tr>
 <tr><td>moKeyword</td><td>String</td><td>Keyword used when sending the donation SMS</td><td>Yes</td></tr>	
+<tr><td>paymentType</td><td>String</td><td>The means of payment used (if any), see table below</td><td>No</td></tr>	
+<p><tr><td>paymentProvider</td><td>String</td><td>The payment provider used (if any), see table below</td><td>No</td></tr>
+</table>
+
+### List of payment types
+
+<table>
+<tr><th>Value</th><th>Payment Type Description</th></tr>	
+<tr><td>2</td><td>Direct Operator Billing</td></tr>	
+<tr><td>5</td><td>Credit Card</td></tr>	
+<tr><td>6</td><td>Mobile Banking App (Vipps, Swish etc.)</td></tr>	
+<tr><td>7</td><td>SMS payment</td></tr>	
+<tr><td>8</td><td>Apple Pay</td></tr>	
+<tr><td>9</td><td>PayPal</td></tr>	
+</table>
+
+### List of payment providers
+
+<table>
+<tr><th>Value</th><th>Payment Provider Description</th></tr>	
+<tr><td>1</td><td>Vipps</td></tr>	
+<tr><td>2</td><td>Swish</td></tr>	
+<tr><td>3</td><td>Dibs</td></tr>	
+<tr><td>4</td><td>Strex</td></tr>	
+<tr><td>5</td><td>Strex</td></tr>	
+<tr><td>6</td><td>Apple Pay</td></tr>	
+<tr><td>7</td><td>PayPal</td></tr>	
 </table>
 
 
