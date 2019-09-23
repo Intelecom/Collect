@@ -70,6 +70,7 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>7</td><td>SMS payment</td></tr>	
 <tr><td>8</td><td>Apple Pay</td></tr>	
 <tr><td>9</td><td>PayPal</td></tr>	
+<tr><td>10</td><td>Klarna</td></tr>
 </table>
 
 ### List of payment providers
