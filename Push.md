@@ -144,8 +144,8 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>guuid</td><td>String</td><td>GUID for the member</td><td>Yes</td></tr>	
 <tr><td>moMessageId</td><td>String</td><td>Identifier for incoming SMS message</td><td>Yes</td></tr>
 <tr><td>memberStatus</td><td>String</td><td>active -> Active Member </br> pending -> Pending confirmation</br>inactive -> Inactive Member</td><td>Yes</td></tr>	
-<tr><td>price</td><td>Integer</td><td></td>Price for starting membership<td>No</td></tr>	
-<tr><td>keyword</td><td>String</td><td></td>SMS keyword used to start the membership<td>No</td></tr>	
+<tr><td>price</td><td>Integer</td><td>Price for starting membership</td><td>No</td></tr>	
+<tr><td>keyword</td><td>String</td><td>SMS keyword used to start the membership</td><td>No</td></tr>	
 </table>
 
 
