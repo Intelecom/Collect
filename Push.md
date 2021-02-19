@@ -199,6 +199,3 @@ http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=11
 	"price": "7500",
 	"keyword": "start"
 	}]
-
-## Implementing the server side
-
