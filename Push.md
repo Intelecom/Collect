@@ -144,6 +144,8 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>guuid</td><td>String</td><td>GUID for the member</td><td>Yes</td></tr>	
 <tr><td>moMessageId</td><td>String</td><td>Identifier for incoming SMS message</td><td>Yes</td></tr>
 <tr><td>memberStatus</td><td>String</td><td>active -> Active Member </br> pending -> Pending confirmation</br>inactive -> Inactive Member</td><td>Yes</td></tr>	
+<tr><td>price</td><td>Integer</td><td></td>Price for starting membership<td>No</td></tr>	
+<tr><td>keyword</td><td>String</td><td></td>SMS keyword used to start the membership<td>No</td></tr>	
 </table>
 
 
@@ -177,7 +179,9 @@ http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=11
 	"email": "ben.harper@test.com",
 	"guuid": "7EAF6sD2-6110-4121-ABFB-191424CD17E7",
 	"moMessageId": "7g01o02eaa00",
-	"memberStatus": "active"
+	"memberStatus": "active",
+	"price": "7500",
+	"keyword": "start"
 	},
 	{
 	"memberId": 5856,
@@ -191,7 +195,9 @@ http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=11
 	"town": "Oslo",
 	"guuid": "1554A141-6AFD-4C73-8231-F54159211BF9",
 	"moMessageId": "7h04b02ibu00",
-	"memberStatus": "active"
+	"memberStatus": "active",
+	"price": "7500",
+	"keyword": "start"
 	}]
 
 ## Implementing the server side
