@@ -125,7 +125,7 @@ If you have a service that is using both modes it is possible to set up multiple
 		"isDone": true,
 		"isProcessed": false,
 		"isSendtToCustomer": false,
-        "defaultKeyword": "kunst"
+		"defaultKeyword": "kunst"
 	}]
 
 ## Member mode - Parameter list
