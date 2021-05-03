@@ -58,6 +58,7 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>moKeyword</td><td>String</td><td>Keyword used when sending the donation SMS</td><td>Yes</td></tr>	
 <tr><td>paymentType</td><td>String</td><td>The means of payment used (if any), see table below</td><td>No</td></tr>	
 <p><tr><td>paymentProvider</td><td>String</td><td>The payment provider used (if any), see table below</td><td>No</td></tr>
+<p><tr><td>defaultKeyword</td><td>String</td><td>The default keyword set on this activity (if any)</td><td>No</td></tr>
 </table>
 
 ### List of payment types
@@ -89,7 +90,7 @@ If you have a service that is using both modes it is possible to set up multiple
 
 ### Example Request - Push of donation data using HTTP(S) GET
 
-	http://customer.server-url.com?id=256213&serviceId=1131&moMessageId=7a07w0002e00&billingMessageId=7a02g1fm7300&firstName=Puzzel++AS&lastName=Group&address=Brynsveien+13&areaCode=0667&city=Oslo&activityId=492&activityType=CollectActivity&activityGuid=07113B9A-7238-4A65-AD56-543DAD01470B&activityName=Test+innsamling&activityInvoiceName=Test+innsamling&collectionUnitId=4250&collectionUnitGuid=70DD51D3-960A-4A97-BBA5-B7DEAA6BF472&collectionUnitCode=23&collectorId=34&collectorName=Test&collectorNumber=234&msisdn=%2B4799999999&orderId=254265&orderDate=2016-02-04+09%3A27%3A28.653&price=100&isDelivered=true&isProcessed=false&moKeyword=grmkunst
+	http://customer.server-url.com?id=256213&serviceId=1131&moMessageId=7a07w0002e00&billingMessageId=7a02g1fm7300&firstName=Puzzel++AS&lastName=Group&address=Brynsveien+13&areaCode=0667&city=Oslo&activityId=492&activityType=CollectActivity&activityGuid=07113B9A-7238-4A65-AD56-543DAD01470B&activityName=Test+innsamling&activityInvoiceName=Test+innsamling&collectionUnitId=4250&collectionUnitGuid=70DD51D3-960A-4A97-BBA5-B7DEAA6BF472&collectionUnitCode=23&collectorId=34&collectorName=Test&collectorNumber=234&msisdn=%2B4799999999&orderId=254265&orderDate=2016-02-04+09%3A27%3A28.653&price=100&isDelivered=true&isProcessed=false&moKeyword=grmkunst&defaultkeyword=kunst
 
 ### Example - Push of donation data using HTTP(S) POST with JSON
 
@@ -123,7 +124,8 @@ If you have a service that is using both modes it is possible to set up multiple
 		"isDelivered": true,
 		"isDone": true,
 		"isProcessed": false,
-		"isSendtToCustomer": false
+		"isSendtToCustomer": false,
+        "defaultKeyword": "kunst"
 	}]
 
 ## Member mode - Parameter list
@@ -146,12 +148,13 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>memberStatus</td><td>String</td><td>active -> Active Member </br> pending -> Pending confirmation</br>inactive -> Inactive Member</td><td>Yes</td></tr>	
 <tr><td>price</td><td>Integer</td><td>Price for starting membership</td><td>No</td></tr>	
 <tr><td>keyword</td><td>String</td><td>SMS keyword used to start the membership</td><td>No</td></tr>	
+<tr><td>defaultkeyword</td><td>String</td><td>The default keyword set on this activity (if any)</td><td>No</td></tr>	
 </table>
 
 
 ### Example Request - Push of member data using HTTP(S) GET
 
-http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=1111&msisdn=+4799999999&firstname=Ola&lastname=Nordmann&address=Kirkegaten+30&postcode=4878&town=Grimstad&email=demo@test.com&guuid=1554A144-6DFD-2277-5231-F54151232BF9&moMessageId=1a04e02ibw0&memberStatus=active
+http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=1111&msisdn=+4799999999&firstname=Ola&lastname=Nordmann&address=Kirkegaten+30&postcode=4878&town=Grimstad&email=demo@test.com&guuid=1554A144-6DFD-2277-5231-F54151232BF9&moMessageId=1a04e02ibw0&memberStatus=active&keyword=start&defaultkeyword=medlem
 
 ### Example Request - Push of member data using HTTP(S) POST with JSON
 
@@ -171,17 +174,18 @@ http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=11
 	"activityId": 451,
 	"serviceId": 2731,
 	"msisdn": "+4799999998",
-	"firstname": "Ben",
-	"lastname": "Harper",
+	"firstname": "Are",
+	"lastname": "Jensen",
 	"address": "Kirkegaten 11",
 	"postcode": "4878",
 	"town": "Grimstad",
-	"email": "ben.harper@test.com",
+	"email": "are.jensen@test.com",
 	"guuid": "7EAF6sD2-6110-4121-ABFB-191424CD17E7",
 	"moMessageId": "7g01o02eaa00",
 	"memberStatus": "active",
 	"price": "7500",
-	"keyword": "start"
+	"keyword": "start",
+    "defaultKeyword": "medlem"
 	},
 	{
 	"memberId": 5856,
@@ -197,5 +201,6 @@ http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=11
 	"moMessageId": "7h04b02ibu00",
 	"memberStatus": "active",
 	"price": "7500",
-	"keyword": "start"
+	"keyword": "start",
+    "defaultKeyword": "medlem"
 	}]
