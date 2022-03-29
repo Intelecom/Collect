@@ -130,7 +130,6 @@ If you have a service that is using both modes it is possible to set up multiple
 
 ## Member mode - Parameter list
 
-
 <table>
 <tr><th>Parameter Name</th><th>Data Type</th><th>Description</th><th>Mandatory</th></tr>	
 <tr><td>memberId</td><td>Integer</td><td>Unique integer identifier for member</td><td>Yes</td></tr>	
@@ -149,12 +148,18 @@ If you have a service that is using both modes it is possible to set up multiple
 <tr><td>price</td><td>Integer</td><td>Price for starting membership</td><td>No</td></tr>	
 <tr><td>keyword</td><td>String</td><td>SMS keyword used to start the membership</td><td>No</td></tr>	
 <tr><td>defaultkeyword</td><td>String</td><td>The default keyword set on this activity (if any)</td><td>No</td></tr>	
+<tr><td>shortcode</td><td>String</td><td>The shortcode used if membership was triggered by SMS</td><td>No</td></tr>
+<tr><td>billingMessageId</td><td>String</td><td>The messageid for the billing SMS used if membership was paid by SMS</td><td>No</td></tr>
+<tr><td>activityGuid</td><td>String</td><td>Unique identifier for the activity tied to the membership</td><td>No</td></tr>
+<tr><td>activityName</td><td>String</td><td>Name of the activity tied to the membership</td><td>No</td></tr>
+<tr><td>activityInvoiceName</td><td>String</td><td>SMS Invoice text for the activity tied to the membership</td><td>No</td></tr>
+<tr><td>strexAuthToken</td><td>String></td><td>The Strex authentication token generated for this member (if any)</td><td>No</td></tr>A
 </table>
 
 
 ### Example Request - Push of member data using HTTP(S) GET
 
-http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=1111&msisdn=+4799999999&firstname=Ola&lastname=Nordmann&address=Kirkegaten+30&postcode=4878&town=Grimstad&email=demo@test.com&guuid=1554A144-6DFD-2277-5231-F54151232BF9&moMessageId=1a04e02ibw0&memberStatus=active&keyword=start&defaultkeyword=medlem
+http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=1111&msisdn=+4799999999&firstname=Ola&lastname=Nordmann&address=Kirkegaten+30&postcode=4878&town=Grimstad&email=demo@test.com&guuid=1554A144-6DFD-2277-5231-F54151232BF9&moMessageId=1a04e02ibw0&memberStatus=active&keyword=start&defaultkeyword=medlem&shortcode=01234&billingMessageId=790cq0002300&activityGuid=BA7C4CAD-F18D-432C-BD6D-6C458E97C585&activityName=Test+Activity&activityInvoiceName=Fastgiver+test&strexAuthToken=1311084899400001234567890123456
 
 ### Example Request - Push of member data using HTTP(S) POST with JSON
 
@@ -202,5 +207,11 @@ http://customer.server-url.com/collect?memberId=5856&activityId=451&serviceId=11
 	"memberStatus": "active",
 	"price": "7500",
 	"keyword": "start",
-    "defaultKeyword": "medlem"
+    "defaultKeyword": "medlem",
+    "shortcode": "01234",
+    "billingMessageId": "790cq0002300",
+	"activityGuid": "BA7C4CAD-F18D-432C-BD6D-6C458E97C585",
+	"activityName": "Test activity",
+	"activityInvoiceName": "Fastgiver test",
+	"strexAuthToken": "1311084899400001234567890123456"
 	}]
